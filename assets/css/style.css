@@ -12,7 +12,7 @@ a{
     text-decoration: none;
     display: inline-block;
 }
-h1{
+h1, h2{
     margin: 0;
 }
 .contactArea{
@@ -31,6 +31,7 @@ h1{
     font-size: 14px;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
     padding: 0 10px;
+    color: #FFF !important;
 }
 .emailArea{
     display: flex;
@@ -91,7 +92,8 @@ nav ul a:hover{
 
 .bannerArea{
     height: calc(100vh - 150px);
-    background-image: url(../images/banner3.jpg);
+    background: linear-gradient(rgba(135, 160, 248, 0.57), rgba(7, 59, 247, 0.57)), url(../images/banner3.jpg);
+    /* background-image: url(../images/banner3.jpg); */
     background-position-x: 0px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,14 +114,15 @@ nav ul a:hover{
 }
 .descriptionArea h1{
     font-weight: bold;
-    font-size: 80px;
-    line-height: 78px;
+    font-size: 100px;
+    line-height: 90px;
     margin-bottom: 20px;
-    color: #2A359B;
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgb(99, 99, 99);
 }
 .descriptionArea .description{
     font-size: 18px;
-    color: #353535;
+    color: #ebebeb;
     max-width: 550px;
     margin-bottom: 20px;
 }
@@ -137,5 +140,143 @@ nav ul a:hover{
     transition: all 0.2s linear;
 }
 .descriptionArea .btn:hover{
+    opacity: 0.8;
+}
+.formArea{
+    display: flex; 
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.formArea h2{
+    font-size: 37px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #353535;
+}
+.descriptionFormTitle{
+    font-size: 18px;
+    color: #999;
+    margin-bottom: 40px;
+}
+
+.formAreaInfos{
+    width: 50%;
+}
+label{
+    font-size: 15px;
+}
+#nameFull::placeholder,
+#cpf::placeholder,
+#adress::placeholder,
+#phone::placeholder,
+#email::placeholder,
+#valor::placeholder{
+    color: #CCC !important;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+.buttonsForm button{
+    background-color: #1E44CB;
+    width: 250px;
+    height: 60px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    transition: all .3s ease;
+}
+.buttonsForm{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+.buttonsForm button:hover{
+    opacity: .8;
+    color: #fff;
+}
+.buttonsForm a{
+    margin-left: 30px;
+}
+
+
+.options{
+    background-color: #1E44CB;
+    padding: 40px;
+}
+.line{
+    width: 1px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #1E44CB
+}
+.optionsArea{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.optionsArea img{
+    width: 70px;
+    margin-bottom: 20px;
+}
+.optionsArea h2{
+    font-weight: bold;
+    color: #fff;
+}
+.moneyPersonalDescription,
+.moneyCompanyDescription{
+    font-size: 15px;
+    color: #B4B2B2;
+    width: 400px;
+    text-align: center;
+    margin-top: 20px;
+}
+.moneyPersonal{
+    text-align: center;
+}
+.moneyCompany{
+    text-align: center;
+}
+.optionsArea a{
+    background-color: #fff;
+    margin-top: 30px;
+    color: #1E44CB;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+.optionsArea a:hover{
+    color: #1E44CB;
+    opacity: .8;
+}
+
+footer{
+    background-color: #2A359B;
+    color: #fff;
+    padding: 20px;
+    font-size:14px;
+}
+
+.footerArea{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 30px;
+}
+.footerPhone,
+.footerEmail{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
+}
+.footerEmail a{
+    color: #FFF;
+    transition: all .3s ease;
+}
+.footerEmail a:hover{
     opacity: 0.8;
 }
