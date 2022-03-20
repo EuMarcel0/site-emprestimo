@@ -12,6 +12,9 @@ a{
     text-decoration: none;
     display: inline-block;
 }
+h1{
+    margin: 0;
+}
 .contactArea{
     display: flex;
     align-items:center;
@@ -83,4 +86,56 @@ nav ul a{
 }   
 nav ul a:hover{
    opacity: 0.6;
+}
+
+
+.bannerArea{
+    height: calc(100vh - 150px);
+    background-image: url(../images/banner3.jpg);
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.itemsBannerArea{
+    display: flex;
+    height: 100%;
+}
+.descriptionArea,
+.imageArea{
+    flex: 1;
+}
+.descriptionArea{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+}
+.descriptionArea h1{
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 78px;
+    margin-bottom: 20px;
+    color: #2A359B;
+}
+.descriptionArea .description{
+    font-size: 18px;
+    color: #353535;
+    max-width: 550px;
+    margin-bottom: 20px;
+}
+.descriptionArea .btn{
+    background-color: #1E44CB;
+    width: 120px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 14px;
+    transition: all 0.2s linear;
+}
+.descriptionArea .btn:hover{
+    opacity: 0.8;
 }
