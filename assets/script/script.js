@@ -115,3 +115,32 @@ function formatarMoeda() {
     if (valor == 'NaN') elemento.value = '';
 
 }
+
+
+
+// LIMPAR VALORES DOS INPUTS
+
+function clearInput(){
+
+    let inputs = document.getElementById('cpf').value;
+        if(inputs != null){
+            inputs = '';
+        }
+        console.log(inputs);
+
+}
+
+
+// CONTROLAR SCROLLING 
+
+
+function scrollNav(){
+    let navOpacity = document.getElementById('header').style;
+        if(window.scroll == 0){
+            navOpacity.style.opacity = '1';
+        }else{
+            navOpacity.style.opacity = '.6';
+        }
+}
+
+scrollNav();

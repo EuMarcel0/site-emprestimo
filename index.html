@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example</title>
+    <title>LeviCred | Crédito pessoal</title>
     <script src="https://kit.fontawesome.com/8d45ecf6f3.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,7 +18,7 @@
         <div class="contactArea">
             <div class="phoneArea">
                 <i class="fa-solid fa-phone"></i>
-                <div class="phoneNumber">(77) 9 9999-9999</div>
+                <div class="phoneNumber">(77) 9 9832-3909</div>
             </div>
             <div class="emailArea">
                 <i class="fa-solid fa-envelope-circle-check"></i>
@@ -26,22 +26,41 @@
                     <div class="emailAdress">gmail@gmail.com</div>
                 </a>
             </div>
+            <div class="instagramArea">
+                <a href="https://www.instagram.com/LEVICRED/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    <div class="instagramAdress">Levicred</div>
+                </a>
+            </div>
+            <div class="facebookArea">
+                <a href="https://www.facebook.com/levicredpromotora" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    <div class="instagramAdress">Levicred</div>
+                </a>
+            </div>
+            <div class="whatsappArea">
+                <a href="https://api.whatsapp.com/send?phone=5577998323909&text=Saber+Mais" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div class="instagramAdress">Nos mande uma mensagem!</div>
+                </a>
+            </div>
         </div>
         <div class="container headerArea">
-            <div class="logoArea">
-                <img src="assets/images/icons8-moedas-96.png" alt="">
-            </div>
+            <a href="index.html"><div class="logoArea">LeviCred</div></a>
             <div class="navArea">
                 <nav>
                     <ul>
                         <a href="#">
                             <li>Contato</li>
                         </a>
-                        <a href="#">
+                        <a href="register.html">
                             <li>Cadastro</li>
                         </a>
-                        <a href="#">
-                            <li>Login</li>
+                        <a href="#serviços">
+                            <li>Serviços</li>
+                        </a>
+                        <a href="#aboutUs">
+                            <li>Sobre nós</li>
                         </a>
                     </ul>
                 </nav>
@@ -60,63 +79,62 @@
                         crédito pessoal com condições imperdíveis para você
                         conquistar sua tranquilidade.
                     </div>
-                    <a class="btn" href="#">Clique aqui</a>
+                    <a class="btn" href="sectionForm">Clique aqui</a>
                 </div>
             </div>
         </section>
 
-        <section class="form">
+        <section class="form" id="sectionForm">
             <div class="formArea container">
                 <h2 class="titleForm" data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="2000">Preencha o
                     formulário e solicite seu empréstimo</h2>
-                <div class="descriptionFormTitle">Nos informe seus dados que iremos retornar as melhores opções para
-                    você </div>
+                <div class="descriptionFormTitle">Nos informe seus dados que iremos retornar as melhores opções paravocê</div>
                 <div class="formAreaInfos form-group">
                     <form data-aos="fade-left"
                     data-aos-anchor="#example-anchor"
                     data-aos-offset="500"
                     data-aos-duration="500">
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-up-right" data-aos-duration="1600">
                             <label for="nameFull">Informe seu nome:</label>
                             <input type="text" class="form-control" id="nameFull" name="nameFull"
                                 placeholder="Nome completo*" required>
                             <small id="emailHelp" class="form-text text-muted">Confira se o nome foi digitado
                                 corretamente.</small>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-up-left" data-aos-duration="1600">
                             <label for="cpf">Informe seu CPF:</label>
                             <input type="text" class="form-control" name="ao_cpf" id="cpf" onblur="validarCPF(this)"
                                 maxlength="11" placeholder="CPF*" required>
                             <small id="cpfHelp" class="form-text text-muted">Confira se o CPF foi digitado
                                 corretamente.</small>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-up-right" data-aos-duration="1600">
                             <label for="adress">Informe seu endereço:</label>
                             <input type="text" class="form-control" name="adress" id="adress" placeholder="Endereço*"
                                 required>
                             <small id="cpfHelp" class="form-text text-muted">Confira se o endereço foi digitado
                                 corretamente.</small>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-up-left" data-aos-duration="1600">
                             <label for="phone">Informe seu telefone:</label>
                             <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefone*"
                                 required>
                             <small id="cpfHelp" class="form-text text-muted">Confira se o telefone foi digitado
                                 corretamente.</small>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-up-right" data-aos-duration="1600">
                             <label for="email">Informe seu E-mail:</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail*"
+                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail*" autocomplete="off"
                                 required>
                             <small id="cpfHelp" class="form-text text-muted">Confira se o e-mail foi digitado
                                 corretamente.</small>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group"data-aos="fade-up-left" data-aos-duration="1600">
                             <label for="valor">(Valor mínimo: R$500,00 | Valor máximo: R$25.000,00)</label>
                             <input type="text" class="form-control" name="valor" id="valor" onkeyup="formatarMoeda()"
                                 placeholder="Valor do empréstimo" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-up-right" data-aos-duration="1600">
                             <label for="hour">Qual melhor horário para você? </label>
                             <select class="form-control" id="hour">
                                 <option></option>
@@ -125,38 +143,77 @@
                                 <option>Noite</option>
                             </select>
                         </div>
-                        <div class="buttonsForm">
+                        <div class="buttonsForm" data-aos="fade-up-left" data-aos-duration="1600">
                             <button type="submit" class="btn">Solicitar</button>
-                            <a href="#">Cancelar</a>
+                            <a href="#" onclick="clearInput()">Cancelar</a>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
 
-        <section class="options">
+        <section class="options" id="serviços">
             <div class="optionsArea container">
-                <div class="moneyPersonal">
+                <div class="moneyPersonal" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1200">
                     <img src="assets/images/money2.png" alt="money_icon">
                     <h2>Empréstimo pessoal</h2>
                     <div class="moneyPersonalDescription">
-                        Crédito em 24h
-                        Rápido e fácil
-                        Débito em conta
-                        de R$ 500 á 25000
+                        Crédito rápido e fácil em 24h
+                        com débito em conta.
+                        Valor mínimo de R$ 500,00 e máximo de R$ 25.000,00 mil.
                     </div>
                     <a href="#" class="btn">Clique aqui</a>
                 </div>
                 <div class="line">..</div>
-                <div class="moneyCompany">
+                <div class="moneyCompany" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1200">
                     <img src="assets/images/icons8-moedas-96.png" alt="money_icon">
                     <h2>Empréstimo consignado</h2>
                     <div class="moneyCompanyDescription">
-                        Aposentados e pensionistas
+                        Aposentados e pensionistas.
                         Crédito em 24h
-                        Sem comprovação de renda
+                        sem comprovação de renda.
                     </div>
                     <a href="#" class="btn">Clique aqui</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobreNos" id="aboutUs">
+            <div class="container mb-30">
+                <div class="sobreNosArea">
+                    <h2 class="sobreNosArea--title" data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="2000">Sobre a LeviCred</h2>
+                    <div class="sobreNosArea--description">Saiba um pouco mais sobre nós</div>
+                </div>
+                <div class="sobreNosArea--text" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1300">
+                    Atuamos como correspondente das maiores instituições financeiras do país, como principal segmento o crédito direto ao consumidor! Visando sempre o aprimoramento e transparência  em todos os nossos produtos.
+                </div>
+                <div class="sobreNos--points" data-aos="fade-down-right" data-aos-duration="2000">
+                    <div class="bulletPoint"></div>
+                    <div class="bulletPointTexts">
+                        <h2 class="sobreNos--points--title">Empresa</h2>
+                        <div class="sobreNos--points--description">A LEVICRED foi fundada em Maio de 2018 no interior da Bahia, visando atender a carência da região á um bom e eficiente atendimento. Com um ano de existência a LEVICRED foi alcançando e desbravando novas fronteiras e hoje esta presente em muitas cidades baianas com parceiros e colaboradores espalhados por todo estado da Bahia.</div>
+                    </div>
+                </div>
+                <div class="sobreNos--points" data-aos="fade-down-left" data-aos-duration="2000">
+                    <div class="bulletPoint"></div>
+                    <div class="bulletPointTexts">
+                        <h2 class="sobreNos--points--title">Missão</h2>
+                        <div class="sobreNos--points--description">Ser uma empresa competitiva, inovadora e ousada que visa sempre o crescimento e bem-estar comum.</div>
+                    </div>
+                </div>
+                <div class="sobreNos--points" data-aos="fade-up-left" data-aos-duration="2000">
+                    <div class="bulletPoint"></div>
+                    <div class="bulletPointTexts">
+                        <h2 class="sobreNos--points--title">Visão</h2>
+                        <div class="sobreNos--points--description">Ser uma empresa competitiva, inovadora e ousada que visa sempre o crescimento e bem-estar comum.</div>
+                    </div>
+                </div>
+                <div class="sobreNos--points" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="bulletPoint"></div>
+                    <div class="bulletPointTexts">
+                        <h2 class="sobreNos--points--title">Valores</h2>
+                        <div class="sobreNos--points--description">Compromisso, transparência, honestidade, ética e respeito são os pilares da nossa empresa!</div>
+                    </div>
                 </div>
             </div>
         </section>

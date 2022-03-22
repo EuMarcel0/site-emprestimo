@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
+/* ----RESET DEFAULT---- */
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -15,6 +19,12 @@ a{
 h1, h2{
     margin: 0;
 }
+
+/* ----RESET DEFAULT---- */
+
+
+/* ----BAR CONTACT---- */
+
 .contactArea{
     display: flex;
     align-items:center;
@@ -40,6 +50,29 @@ h1, h2{
     height: 100%;
     font-size: 14px;
     padding: 0 10px;
+    color: #FFF;
+}
+.instagramArea a,
+.facebookArea a,
+.whatsappArea a{
+    display: flex;
+    gap: 7px;
+    align-items:center;
+    height: 100%;
+    font-size: 14px;
+    padding: 0 10px;
+    color: #FFF;
+    transition: all .3s ease;
+}
+.instagramArea a:hover,
+.facebookArea a:hover,
+.whatsappArea a:hover{
+    opacity: 0.8;
+}
+.instagramArea i,
+.facebookArea i,
+.whatsappArea i{
+    font-size: 16px;
 }
 .emailArea a{
     color: #fff;
@@ -49,12 +82,15 @@ h1, h2{
 .emailArea a:hover{
     opacity: 0.8;
 }
-/* .line{
-    height:3px;
-    background-color: red;
-} */
+
+/* ----BAR CONTACT---- */
+
+/* ----HEADER + NAV---- */
+.fixed-top{
+    opacity: 1;
+}
 header{
-    height: 150px;
+    height: 130px;
     background-color: #1E44CB;
 }
 .headerArea{
@@ -64,8 +100,9 @@ header{
     margin-top: 18px;
 }
 
-.logoArea img{
-    width: 60px;
+.logoArea{
+    color: #FFF;
+    font-size: 30px;
 }
 
 nav ul{
@@ -88,12 +125,23 @@ nav ul a{
 nav ul a:hover{
    opacity: 0.6;
 }
+.btn2{
+    background-color: #FFF;
+    padding: 5px 15px;
+    color: #000;
+    border-radius: 3px;
+}
+.btn2 li{
+    color: #1E44CB;
+}
 
+/* ----HEADER + NAV---- */
+
+/* ----BANNER TOP AREA----  */
 
 .bannerArea{
-    height: calc(100vh - 150px);
-    background: linear-gradient(rgba(135, 160, 248, 0.57), rgba(7, 59, 247, 0.57)), url(../images/banner3.jpg);
-    /* background-image: url(../images/banner3.jpg); */
+    height: calc(100vh - 130px);
+    background: linear-gradient(rgba(135, 160, 248, 0.57), rgba(250, 251, 255, 0.57)), url(../images/banner3.jpg);
     background-position-x: 0px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,7 +170,7 @@ nav ul a:hover{
 }
 .descriptionArea .description{
     font-size: 18px;
-    color: #ebebeb;
+    color: #353535;
     max-width: 550px;
     margin-bottom: 20px;
 }
@@ -141,6 +189,16 @@ nav ul a:hover{
 }
 .descriptionArea .btn:hover{
     opacity: 0.8;
+}
+
+/* ----BANNER TOP AREA----  */
+
+/* ----AREA FORMULARIO---- */
+.form{
+    background: linear-gradient(rgba(255, 255, 255, 0.57), rgba(255, 255, 255, 0.57)), url(../images/banner5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .formArea{
     display: flex; 
@@ -201,6 +259,9 @@ label{
     margin-left: 30px;
 }
 
+/* ----AREA FORMULARIO---- */
+
+/* ----SERVICOS AREA---- */
 
 .options{
     background-color: #1E44CB;
@@ -253,11 +314,75 @@ label{
     opacity: .8;
 }
 
+/* ----SERVICOS AREA---- */
+
+
+/* SOBRE NOS -- AREA */
+
+.sobreNosArea{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.sobreNosArea--title{
+    font-size: 37px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #353535;
+}
+.sobreNosArea--description{
+    font-size: 18px;
+    color: #999;
+    margin-bottom: 40px;
+}
+
+.sobreNosArea--text{
+    max-width: 480px;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    color: #353535;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 20px 0;
+}
+
+.sobreNos--points{
+    display: flex;
+    border-left: 1px solid #CCC;
+    padding: 30px;
+}
+.sobreNos--points .bulletPoint{
+    background-color: #4b64c0;
+    width: 32px;
+    height: 4px;
+    border-radius: -132px;
+    margin-left: -31px;
+    margin-top: -31px;
+}
+.sobreNos--points--title{
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-left: 14px;
+    margin-top: -38px;
+    color: #353535;
+}
+.sobreNos--points--description{
+    margin-left: 14px;
+    margin-top: 10px;
+    color: #999;
+}
+
+.mb-30{
+    margin-bottom: 20px;
+}
+
+/* ----FOOTER AREA---- */
+
 footer{
     background-color: #2A359B;
     color: #fff;
     padding: 20px;
     font-size:14px;
+    margin-top: 0px;
 }
 
 .footerArea{
@@ -280,3 +405,5 @@ footer{
 .footerEmail a:hover{
     opacity: 0.8;
 }
+
+/* ----FOOTER AREA---- */
