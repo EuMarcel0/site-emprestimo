@@ -76,18 +76,17 @@ function validacao_telefone() {
     let valor = this.value.replace(/[^0-9]/gi, "");
     if (!(regexTelefoneSemDDD.test(valor) || regeTelefoneComDDD.test(valor))) {
         this.style.color = 'red';
-        alert("Telefone Inválido");
     }
 }
 
-function validacao_email() {
-    if (!regexEmail.test(this.value)) {
-        this.style.color = 'red';
-        alert("Email Inválido");
-    } else {
-        this.style.color = 'black';
-    }
-}
+// function validacao_email() {
+//     if (!regexEmail.test(this.value)) {
+//         this.style.color = 'red';
+//         alert("Email Inválido");
+//     } else {
+//         this.style.color = 'black';
+//     }
+// }
 
 document.getElementById("phone").onkeyup = mascara_telefone;
 document.getElementById("phone").onblur = validacao_telefone;
@@ -117,30 +116,24 @@ function formatarMoeda() {
 }
 
 
-
-// LIMPAR VALORES DOS INPUTS
-
-function clearInput(){
-
-    let inputs = document.getElementById('cpf').value;
-        if(inputs != null){
-            inputs = '';
-        }
-        console.log(inputs);
-
-}
-
-
 // CONTROLAR SCROLLING 
 
 
-function scrollNav(){
-    let navOpacity = document.getElementById('header').style;
-        if(window.scroll == 0){
-            navOpacity.style.opacity = '1';
-        }else{
-            navOpacity.style.opacity = '.6';
-        }
-}
 
-scrollNav();
+// BUTTON TO TOP
+
+function scrollBar(){
+    window.scrollTo({
+        top: 0,
+        behavior:'smooth',
+    });
+};
+
+function controlarBotao(){
+    if (window.scrollY == 0){
+        document.querySelector(".btnTop").style.display = 'block'; 
+    } else{
+        document.querySelector(".btnTop").style.display = 'none';
+    }
+};
+window.addEventListener("scroll", controlarBotao);

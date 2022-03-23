@@ -97,7 +97,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 18px;
 }
 
 .logoArea{
@@ -105,6 +104,12 @@ header{
     font-size: 30px;
 }
 
+.navArea{
+    height: 80px;
+}
+nav{
+    height: 100%;
+}
 nav ul{
     height: 100%;
     display: flex;
@@ -117,13 +122,19 @@ nav ul li{
     list-style: none;
     color: #FFFFFF;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
     
 }
 nav ul a{
+    height: 100%;
     transition: all .3s linear;
 }   
 nav ul a:hover{
-   opacity: 0.6;
+    background-color: rgba(104, 114, 255, 0.39);
+    font-size: 5px;
 }
 .btn2{
     background-color: #FFF;
@@ -407,3 +418,18 @@ footer{
 }
 
 /* ----FOOTER AREA---- */
+
+/* ----ARROW TOP AREA---- */ 
+.btnTop img{
+    width:40px;
+    height:40px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color:#1E44CB;
+    padding:5px;
+    border-radius: 50%;
+    cursor:pointer;
+    display: block;
+    z-index: 999;
+}
