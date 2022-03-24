@@ -152,7 +152,7 @@ nav ul a:hover{
 
 .bannerArea{
     height: calc(100vh - 130px);
-    background: linear-gradient(rgba(135, 160, 248, 0.57), rgba(250, 251, 255, 0.57)), url(../images/banner3.jpg);
+    background: linear-gradient(rgba(135, 160, 248, 0.57), rgba(43, 72, 189, 0.97)), url(../images/banner3-1.jpg);
     background-position-x: 0px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -181,7 +181,7 @@ nav ul a:hover{
 }
 .descriptionArea .description{
     font-size: 18px;
-    color: #353535;
+    color: #d6d6d6;
     max-width: 550px;
     margin-bottom: 20px;
 }
@@ -199,7 +199,8 @@ nav ul a:hover{
     transition: all 0.2s linear;
 }
 .descriptionArea .btn:hover{
-    opacity: 0.8;
+    opacity: 0.9;
+    box-shadow: 1px 1px 0 #fff;
 }
 
 /* ----BANNER TOP AREA----  */
@@ -561,31 +562,90 @@ footer{
 
 /* ----Energy AREA---- */
 #energy{
-    background: linear-gradient(rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.77)), url(../images/house.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.87)), url(../images/house.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height:calc(100vh - 191px);
+    height:100vh;
     padding: 30px;
 }
-.energyArea--texts h2{
-    font-size: 1.9rem;
-    text-align: center;
-    font-weight: bold;
+.energyArea{
+    display: flex;
+    gap: 20px;
 }
-.energyArea--description{
-    background-color: red;
+.energyArea--texts{
     width: 50%;
+}
+.energyArea--texts h2{
+    font-size: 3rem;
+    text-align: left;
+    font-weight: bold;
     margin-top: 30px;
 }
-
-
-
-
-
-
-
-
+.energyArea--description{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.energyArea--description i{
+    font-size: 1.5rem;
+}
+.energyArea--description-desc{
+    margin-left: 50px;
+    margin-top: 10px;
+    color: #555;
+}
+.energyArea--warning{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.btnEnergy{
+    background-color: #2A359B;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px 30px;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    margin-top:40px;
+    border-radius: 4px;
+}
+.btnEnergy:hover{
+    color: #fff;
+    opacity: .8;
+}
+.energyContract{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #1E44CB;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 50%;
+    padding: 50px;
+}
+.energyContract h2{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.377);
+    padding: 10px;
+}
+.energyContract--items{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 20px;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+    padding: 10px;
+}
 
 
 /* ----FOOTER AREA---- */
