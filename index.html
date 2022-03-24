@@ -15,6 +15,7 @@
 
 <body>
     <header id="header">
+        <!-- BARRA COM CONTATOS PRE HEADER/NAV -->
         <div class="contactArea">
             <div class="phoneArea">
                 <i class="fa-solid fa-phone"></i>
@@ -45,8 +46,13 @@
                 </a>
             </div>
         </div>
+        <!-- BARRA COM CONTATOS PRE HEADER/NAV -->
+
+        <!-- AREA NAVBAR -->
         <div class="container headerArea">
-            <a href="index.html"><div class="logoArea">LeviCred</div></a>
+            <a href="index.html">
+                <div class="logoArea">LeviCred</div>
+            </a>
             <div class="navArea">
                 <nav>
                     <ul>
@@ -56,18 +62,26 @@
                         <a href="register.html">
                             <li>Cadastro</li>
                         </a>
+                        <a href="#cartaoCredito">
+                            <li>Cartão de crédito</li>
+                        </a>
                         <a href="#serviços">
                             <li>Serviços</li>
                         </a>
                         <a href="#aboutUs">
                             <li>Sobre nós</li>
                         </a>
+                        <a href="#partner">
+                            <li>Seja parceiro</li>
+                        </a>
                     </ul>
                 </nav>
             </div>
         </div>
+        <!-- AREA NAVBAR -->
     </header>
     <main id="contentMaster">
+        <!-- BANNER TOP -->
         <section class="bannerArea">
             <div class="itemsBannerArea container">
                 <div class="descriptionArea" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1300">
@@ -83,19 +97,18 @@
                 </div>
             </div>
         </section>
+        <!-- BANNER TOP -->
 
+        <!-- FORMULARIO PRINCIPAL -->
         <section class="form" id="sectionForm">
             <div class="formArea container">
                 <h2 class="titleForm" data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="2000">Preencha o
                     formulário e solicite seu empréstimo</h2>
-                <div class="descriptionFormTitle">Nos informe seus dados que iremos retornar as melhores opções paravocê</div>
+                <div class="descriptionFormTitle">Nos informe seus dados que iremos retornar as melhores opções paravocê
+                </div>
                 <div class="formAreaInfos form-group">
-                    <form method="post"
-                    data-aos="fade-left"
-                    data-aos-anchor="#example-anchor"
-                    data-aos-offset="500"
-                    data-aos-duration="500" 
-                    autocomplete="off">
+                    <form method="post" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                        data-aos-duration="500" autocomplete="off">
                         <div class="form-group" data-aos="fade-up-right" data-aos-duration="1600">
                             <label for="nameFull">Informe seu nome:</label>
                             <input type="text" class="form-control" id="nameFull" name="nameFull"
@@ -126,12 +139,12 @@
                         </div>
                         <div class="form-group" data-aos="fade-up-right" data-aos-duration="1600">
                             <label for="email">Informe seu E-mail:</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail*" autocomplete="off"
-                                required>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail*"
+                                autocomplete="off" required>
                             <small id="cpfHelp" class="form-text text-muted">Confira se o e-mail foi digitado
                                 corretamente.</small>
                         </div>
-                        <div class="form-group"data-aos="fade-up-left" data-aos-duration="1600">
+                        <div class="form-group" data-aos="fade-up-left" data-aos-duration="1600">
                             <label for="valor">(Valor mínimo: R$500,00 | Valor máximo: R$25.000,00)</label>
                             <input type="text" class="form-control" name="valor" id="valor" onkeyup="formatarMoeda()"
                                 placeholder="Valor do empréstimo" required>
@@ -153,9 +166,21 @@
                 </div>
             </div>
         </section>
+        <!-- FORMULARIO PRINCIPAL -->
 
+        <!-- AREA SERVICOS/PRODUTOS -->
         <section class="options" id="serviços">
             <div class="optionsArea container">
+                <div class="moneyPersonal" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1200">
+                    <img src="assets/images/lampada.png" alt="money_icon">
+                    <h2>Empréstimo energia</h2>
+                    <div class="moneyPersonalDescription">
+                        Crédito rápido e fácil de R$ 200 á 1000 em 4h
+                        sem comprovação de renda.
+                        <span>Crédito para negativado</span>
+                    </div>
+                    <a href="energy.html" class="btn">Clique aqui</a>
+                </div>
                 <div class="moneyPersonal" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1200">
                     <img src="assets/images/money2.png" alt="money_icon">
                     <h2>Empréstimo pessoal</h2>
@@ -175,54 +200,167 @@
                         Crédito em 24h
                         sem comprovação de renda.
                     </div>
-                    <a href="#" class="btn">Clique aqui</a>
+                    <a href="https://api.whatsapp.com/send?phone=5577998323909&text=Saber+Mais" class="btn" target="_blank">Clique aqui</a>
                 </div>
             </div>
         </section>
+        <!-- AREA SERVICOS/PRODUTOS -->
 
+        <!-- AREA SOBRE NÓS -->
         <section class="sobreNos" id="aboutUs">
             <div class="container mb-30">
                 <div class="sobreNosArea">
-                    <h2 class="sobreNosArea--title" data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="2000">Sobre a LeviCred</h2>
+                    <h2 class="sobreNosArea--title" data-aos="fade-up-left" data-aos-delay="500"
+                        data-aos-duration="2000">Sobre a LeviCred</h2>
                     <div class="sobreNosArea--description">Saiba um pouco mais sobre nós</div>
                 </div>
                 <div class="sobreNosArea--text" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1300">
-                    Atuamos como correspondente das maiores instituições financeiras do país, como principal segmento o crédito direto ao consumidor! Visando sempre o aprimoramento e transparência  em todos os nossos produtos.
+                    Atuamos como correspondente das maiores instituições financeiras do país, como principal segmento o
+                    crédito direto ao consumidor! Visando sempre o aprimoramento e transparência em todos os nossos
+                    produtos.
                 </div>
                 <div class="sobreNos--points" data-aos="fade-down-right" data-aos-duration="2000">
                     <div class="bulletPoint"></div>
                     <div class="bulletPointTexts">
                         <h2 class="sobreNos--points--title">Empresa</h2>
-                        <div class="sobreNos--points--description">A LEVICRED foi fundada em Maio de 2018 no interior da Bahia, visando atender a carência da região á um bom e eficiente atendimento. Com um ano de existência a LEVICRED foi alcançando e desbravando novas fronteiras e hoje esta presente em muitas cidades baianas com parceiros e colaboradores espalhados por todo estado da Bahia.</div>
+                        <div class="sobreNos--points--description">A LEVICRED foi fundada em Maio de 2018 no interior da
+                            Bahia, visando atender a carência da região á um bom e eficiente atendimento. Com um ano de
+                            existência a LEVICRED foi alcançando e desbravando novas fronteiras e hoje esta presente em
+                            muitas cidades baianas com parceiros e colaboradores espalhados por todo estado da Bahia.
+                        </div>
                     </div>
                 </div>
                 <div class="sobreNos--points" data-aos="fade-down-left" data-aos-duration="2000">
                     <div class="bulletPoint"></div>
                     <div class="bulletPointTexts">
                         <h2 class="sobreNos--points--title">Missão</h2>
-                        <div class="sobreNos--points--description">Ser uma empresa competitiva, inovadora e ousada que visa sempre o crescimento e bem-estar comum.</div>
+                        <div class="sobreNos--points--description">Ser uma empresa competitiva, inovadora e ousada que
+                            visa sempre o crescimento e bem-estar comum.</div>
                     </div>
                 </div>
                 <div class="sobreNos--points" data-aos="fade-up-left" data-aos-duration="2000">
                     <div class="bulletPoint"></div>
                     <div class="bulletPointTexts">
                         <h2 class="sobreNos--points--title">Visão</h2>
-                        <div class="sobreNos--points--description">Ser uma empresa competitiva, inovadora e ousada que visa sempre o crescimento e bem-estar comum.</div>
+                        <div class="sobreNos--points--description">Ser uma empresa competitiva, inovadora e ousada que
+                            visa sempre o crescimento e bem-estar comum.</div>
                     </div>
                 </div>
                 <div class="sobreNos--points" data-aos="fade-up-right" data-aos-duration="2000">
                     <div class="bulletPoint"></div>
                     <div class="bulletPointTexts">
                         <h2 class="sobreNos--points--title">Valores</h2>
-                        <div class="sobreNos--points--description">Compromisso, transparência, honestidade, ética e respeito são os pilares da nossa empresa!</div>
+                        <div class="sobreNos--points--description">Compromisso, transparência, honestidade, ética e
+                            respeito são os pilares da nossa empresa!</div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- AREA SOBRE NÓS -->
+
+        <!-- AREA SEJA PARCEIRO -->
+        <section id="partner">
+            <div class="partnerArea container">
+                <div class="partnerArea--title">
+                    <h2 class="title" data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="2000">Seja
+                        parceiro(a)</h2>
+                    <div class="description">Venha fazer parte do nosso time!</div>
+                </div>
+                <div class="partnerArea--items">
+                    <div class="partnerArea--item" data-aos="zoom-in-right" data-aos-delay="500"
+                        data-aos-duration="1100">
+                        <i class="fa-solid fa-headset"></i>
+                        <div class="item--title">Suporte Pessoal</div>
+                        <div class="item--description">Nossos parceiros contam com um suporte mais que especial,
+                            operacional e financeiro.</div>
+                    </div>
+                    <div class="partnerArea--item" data-aos="zoom-in-left" data-aos-delay="500"
+                        data-aos-duration="1100">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <div class="item--title">Melhores Comissões</div>
+                        <div class="item--description">Temos as mais agressivas condições do mercado, até 100% de alguns
+                            bancos.</div>
+                    </div>
+                    <div class="partnerArea--item" data-aos="zoom-in-right" data-aos-delay="500"
+                        data-aos-duration="1100">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                        <div class="item--title">Pagamentos Diários</div>
+                        <div class="item--description">Todos os dias geramos relatórios, de segunda a sexta.</div>
+                    </div>
+                    <div class="partnerArea--item" data-aos="zoom-in-left" data-aos-delay="500"
+                        data-aos-duration="1100">
+                        <i class="fa-solid fa-user-clock"></i>
+                        <div class="item--title">Agilidade</div>
+                        <div class="item--description">Disponibilizamos um sistema único paras as digitações e gestão de
+                            contratos.</div>
+                    </div>
+                </div>
+                <div class="partnerArea--form" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                    <form method="post">
+                        <div class="row">
+                            <div class="col">
+                                <label for="nome">Informe seu nome</label>
+                                <input type="text" class="form-control" placeholder="Nome" name='nome' required>
+                            </div>
+                            <div class="col">
+                                <label for="sobrenome">Informe seu sobrenome</label>
+                                <input type="text" class="form-control" placeholder="Sobrenome" name='sobrenome' required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="email">Informe seu e-mail</label>
+                                <input type="email" class="form-control" placeholder="E-mail" name="email" required>
+                            </div>
+                            <div class="col">
+                                <label for="adress">Informe seu endereço</label>
+                                <input type="text" class="form-control" placeholder="Endereço" name='adress' required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="dataNiver">Data aniversário</label>
+                                <input type="date" class="form-control" id='dataNiver' name='dataNiver' placeholder="Data aniversário" required>
+                            </div>
+                            <div class="col">
+                                <label for="phone2">Informe seu telefone</label>
+                                <input type="text" class="form-control" placeholder="Telefone" id="phone2" name="phone2" required>
+                            </div>
+                        </div>
+                        <input type="submit" class="btn" value="Enviar dados" id="btnSubmit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- AREA SEJA PARCEIRO -->
+
+        <!-- AREA CARTAO CREDITO PAN -->
+        <section id="cartaoCredito">
+            <div class="cardArea--titles">
+                <h2 class="cardArea--title" data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="2000">Cartões PAN</h2>
+                <div class="cardArea--title--description">Facilidade que cabe na mão</div>
+            </div>
+            <div class="cardArea container">
+                <div class="cardArea--card" data-aos="fade-down-right" data-aos-delay="500" data-aos-duration="1300">
+                    <img src="assets/images/pancard.webp" alt="cartao_pan">
+                </div>
+                <div class="cardArea--descriptions" data-aos="fade-down-left" data-aos-delay="500" data-aos-duration="1300">
+                    <div class="cardArea--description">Cartão de crédito<br>sem anuidade<br>e sem burocracia</div>
+                    <a href="https://agx.link/fontes-sitelevicred" target="_blank" class="btn">Peça já seu cartão</a>
+                </div>
+            </div>
+        </section>
+        <!-- AREA CARTAO CREDITO PAN -->
     </main>
+    <!-- BOTAO PARA SCROLLAR PARA CIMA -->
     <div onclick="scrollBar()" class="btnTop">
         <img src="assets/images/seta-para-recolher.png" alt="Voltar_ao_topo">
     </div>
+    <!-- BOTAO PARA SCROLLAR PARA CIMA -->
+
+    <!-- FOOTER AREA -->
     <footer>
         <div class="footerArea container">
             <div class="copyright">© 2022 LeviCred. Todos os direitos reservados</div>
@@ -238,6 +376,7 @@
             </div>
         </div>
     </footer>
+    <!-- FOOTER AREA -->
     <script src="assets/script/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

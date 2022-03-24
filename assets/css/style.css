@@ -306,6 +306,10 @@ label{
     text-align: center;
     margin-top: 20px;
 }
+.moneyPersonalDescription span{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
 .moneyPersonal{
     text-align: center;
 }
@@ -328,20 +332,26 @@ label{
 /* ----SERVICOS AREA---- */
 
 
-/* SOBRE NOS -- AREA */
+/* ----SOBRE NOS AREA---- */
 
-.sobreNosArea{
+.sobreNosArea,
+.partnerArea--title,
+.cardArea--titles{
     display: flex;
     flex-direction: column;
     align-items:center;
 }
-.sobreNosArea--title{
+.sobreNosArea--title,
+.title,
+.cardArea--title{
     font-size: 37px;
     font-weight: bold;
     margin-top: 30px;
     color: #353535;
 }
-.sobreNosArea--description{
+.sobreNosArea--description,
+.description,
+.cardArea--title--description{
     font-size: 18px;
     color: #999;
     margin-bottom: 40px;
@@ -386,6 +396,138 @@ label{
     margin-bottom: 20px;
 }
 
+/* ----SOBRE NOS AREA---- */
+
+/* ----PARTNER AREA----  */
+
+#partner{
+    background-color: #1E44CB;
+    padding: 0 10px 40px 10px;
+}
+.partnerArea{
+
+}
+.partnerArea--title{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.title{
+    font-size: 37px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #FFF;
+}
+.description{
+    font-size: 18px;
+    color: rgb(197, 197, 197);
+    margin-bottom: 40px;
+}
+.partnerArea--items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.partnerArea--item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    color: #FFF;
+}
+.partnerArea--item i{
+    font-size: 2rem;
+    margin-bottom:20px;
+}
+.partnerArea--item .item--title{
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(116, 142, 255, 0.24);
+}
+.partnerArea--item .item--description{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/* ----PARTNER AREA----  */
+
+/* ----PARTNER AREA - FORM---- */
+
+.partnerArea--form{
+    display: flex;
+    justify-content:center;
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid rgba(116, 142, 255, 0.24);
+}
+.partnerArea--form form{
+    width: 80%;
+}
+.partnerArea--form .form-control{
+    margin-bottom: 25px !important;
+}
+.partnerArea--form label{
+    color: #FFF;
+}
+.partnerArea--form .form-control::placeholder{
+    color: #ccc;
+}
+.partnerArea--form #btnSubmit{
+    background-color: #2A359B;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px 30px;
+    display: block;
+    transition: all .2s ease-in-out;
+}
+.partnerArea--form #btnSubmit:hover{
+    opacity: 0.8;
+    box-shadow: 2px 1px 0 #4967d4;
+}
+/* ----PARTNER AREA - FORM---- */
+
+/* ----CARTAO DE CREDITO AREA---- */
+
+#cartaoCredito{
+    padding: 0 10px 40px 10px;
+}
+.cardArea{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.cardArea--descriptions{
+    margin-left: 30px;
+}
+.cardArea--description{
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+.cardArea--descriptions .btn{
+    background-color: #2A359B;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px 30px;
+    display: block;
+    transition: all .2s ease-in-out;
+}
+.cardArea--descriptions .btn:hover{
+    opacity: 0.8;
+}
+
+/* ----CARTAO DE CREDITO AREA---- */
+
 /* ----FOOTER AREA---- */
 
 footer{
@@ -417,6 +559,35 @@ footer{
     opacity: 0.8;
 }
 
+/* ----Energy AREA---- */
+#energy{
+    background: linear-gradient(rgba(255, 255, 255, 0.77), rgba(255, 255, 255, 0.77)), url(../images/house.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:calc(100vh - 191px);
+    padding: 30px;
+}
+.energyArea--texts h2{
+    font-size: 1.9rem;
+    text-align: center;
+    font-weight: bold;
+}
+.energyArea--description{
+    background-color: red;
+    width: 50%;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
 /* ----FOOTER AREA---- */
 
 /* ----ARROW TOP AREA---- */ 
@@ -433,3 +604,4 @@ footer{
     display: block;
     z-index: 999;
 }
+

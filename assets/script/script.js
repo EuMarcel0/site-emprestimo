@@ -137,3 +137,38 @@ function controlarBotao(){
     }
 };
 window.addEventListener("scroll", controlarBotao);
+
+
+
+function mascara_telefone() {
+    // remove caracteres que não são números
+    this.value = this.value.replace(/[^0-9]/gi, "");
+
+    if (this.value.length > 11) {
+        this.value = this.value.substr(0, 12);
+    }
+
+    if (regexTelefoneSemDDD.test(this.value)) {
+        this.value = this.value.replace(regexTelefoneSemDDD, "$1$3-$2$4");
+        this.style.color = 'black';
+    } else if (regeTelefoneComDDD.test(this.value)) {
+        this.value = this.value.replace(regeTelefoneComDDD, "($1$4$7$10$13)$2$5$8$11$14-$3$6$9$12$15");
+        this.style.color = 'black';
+    } else if (regexTelefoneSeparador.test(this.value)) {
+        this.value = this.value.replace(regexTelefoneSeparador, "$1-$2");
+        this.style.color = 'black';
+    } else {
+        this.style.color = 'red';
+    }
+};
+
+function validacao_telefone() {
+    let valor = this.value.replace(/[^0-9]/gi, "");
+    if (!(regexTelefoneSemDDD.test(valor) || regeTelefoneComDDD.test(valor))) {
+        this.style.color = 'red';
+    }
+}
+
+
+document.getElementById("phone2").onkeyup = mascara_telefone;
+document.getElementById("phone2").onblur = validacao_telefone;
