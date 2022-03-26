@@ -113,11 +113,23 @@ function formatarMoeda() {
     elemento.value = valor;
     if (valor == 'NaN') elemento.value = '';
 
-}
+};
 
 
 // CONTROLAR SCROLLING 
 
+
+
+const navBar = document.getElementById('navbarID');
+const sticky = navBar.offsetTop;
+
+function fixedNav(){
+    if(window.scrollY >= sticky){
+        navBar.classList.add('sticky');
+    }else{
+        navBar.classList.remove('sticky');
+    }
+};
 
 
 // BUTTON TO TOP
@@ -131,9 +143,10 @@ function scrollBar(){
 
 function controlarBotao(){
     if (window.scrollY == 0){
-        document.querySelector(".btnTop").style.display = 'block'; 
+        console.log(window.scrollY);
+        document.querySelector(".btnTop").style.display = 'none'; 
     } else{
-        document.querySelector(".btnTop").style.display = 'none';
+        document.querySelector(".btnTop").style.display = 'block';
     }
 };
 window.addEventListener("scroll", controlarBotao);
