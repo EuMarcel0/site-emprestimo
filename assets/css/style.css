@@ -21,6 +21,32 @@ h1, h2{
     margin: 0;
 }
 
+.titleDefault{
+    width: 100%;
+    text-align: center;
+}
+.titleDefault .title1{
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.titleDefault .subTitle1{
+    font-size: 20px;
+    color: #CCC;
+    line-height:10px;
+    margin-bottom: 40px;
+}
+.titleDefault .title2{
+    color: #353535;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.titleDefault .subTitle2{
+    font-size: 20px;
+    color: #CCC;
+    line-height:10px;
+    margin-bottom: 40px;
+}
 /* ----AREA MODAL---- */
 
 #modal{
@@ -333,6 +359,7 @@ nav ul a:active{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 40px;
 }
 .formArea{
     display: flex; 
@@ -456,7 +483,9 @@ label{
 
 
 /* ----SOBRE NOS AREA---- */
-
+#aboutUs{
+    padding: 40px;
+}
 .sobreNosArea,
 .partnerArea--title,
 .cardArea--titles{
@@ -525,7 +554,7 @@ label{
 
 #partner{
     background-color: #1E44CB;
-    padding: 0 10px 40px 10px;
+    padding: 40px;
 }
 .partnerArea{
 
@@ -620,7 +649,7 @@ label{
 /* ----CARTAO DE CREDITO AREA---- */
 
 #cartaoCredito{
-    padding: 0 10px 40px 10px;
+    padding: 40px 0;
 }
 .cardArea{
     display: flex;
@@ -654,18 +683,30 @@ label{
 /* ----FOOTER AREA---- */
 
 footer{
-    background-color: #2A359B;
+    background-color: #1E44CB;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     font-size:14px;
     margin-top: 0px;
+    position: relative;
 }
 
 .footerArea{
     display: flex;
     justify-content:center;
-    align-items:center;
     gap: 30px;
+}
+
+.footerArea--items{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px;
+}
+.footerArea--items:last-child{
+    border-right: 0 !important;
 }
 .footerPhone,
 .footerEmail{
@@ -673,6 +714,7 @@ footer{
     justify-content:center;
     align-items:center;
     gap: 10px;
+    padding: 0 0 0 10px;
 }
 .footerEmail a{
     color: #FFF;
@@ -681,7 +723,58 @@ footer{
 .footerEmail a:hover{
     opacity: 0.8;
 }
+.letter .letterDescription{
+   margin-bottom: 20px;
+   font-size: 20px;
+}
+.linksArea{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footerArea--items .btn{
+    background-color: #FFF;
+    color: #1E44CB;
+    font-weight: bold;
+    margin: auto;
+}
+.footerArea--items .links{
+    display: flex;
+    flex-direction: column;
+}
+.footerArea--items .links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+.footerArea--items .links ul a{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
+}
+.footerArea--items .links ul a li{
+    list-style: none;
+    color: #FFF;
+}
+.footerArea--items .links ul a li:hover{
+    opacity: .8;
+}
+.footerArea--items .linksTitle{
+    font-size: 20px;
+}
 
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 50px;
+    background-color: #2A359B;
+    position: absolute;
+    bottom: 0;
+}
 /* ----Energy AREA---- */
 #energy{
     background: linear-gradient(rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.87)), url(../images/house.jpg);
