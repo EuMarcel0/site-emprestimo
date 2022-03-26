@@ -56,9 +56,7 @@
             <div class="navArea">
                 <nav>
                     <ul>
-                        <a href="#">
-                            <li>Contato</li>
-                        </a>
+                        <button id="contact" onclick="openModal()">Contato</button>
                         <a href="register.html">
                             <li>Cadastro</li>
                         </a>
@@ -359,7 +357,6 @@
         <img src="assets/images/seta-para-recolher.png" alt="Voltar_ao_topo">
     </div>
     <!-- BOTAO PARA SCROLLAR PARA CIMA -->
-
     <!-- FOOTER AREA -->
     <footer>
         <div class="footerArea container">
@@ -377,6 +374,48 @@
         </div>
     </footer>
     <!-- FOOTER AREA -->
+    <!-- MODAL AREA  -->
+    <div id="modal">
+        <div class="modal--area" id='areaModal' data-aos="fade-down" data-aos-delay="400" data-aos-duration="1100">
+            <div class="contact--title">
+                Entre em contato conosco
+            </div>
+            <div class="contact--items">
+                <div class="phoneArea phoneNumber--contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="phoneNumber">(77) 9 9832-3909</div>
+                </div>
+                <div class="emailArea">
+                    <i class="fa-solid fa-envelope-circle-check"></i>
+                    <a href="mailto:hi@themedept.com">
+                        <div class="emailAdress">gmail@gmail.com</div>
+                    </a>
+                </div>
+                <div class="instagramArea">
+                    <a href="https://www.instagram.com/LEVICRED/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <div class="instagramAdress">Levicred</div>
+                    </a>
+                </div>
+                <div class="facebookArea">
+                    <a href="https://www.facebook.com/levicredpromotora" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        <div class="facebookAdress">Levicred</div>
+                    </a>
+                </div>
+                <div class="whatsappArea">
+                    <a href="https://api.whatsapp.com/send?phone=5577998323909&text=Saber+Mais" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div class="whatsappAdress">Nos mande uma mensagem!</div>
+                    </a>
+                </div>
+            </div>
+            <div class="closeModal" id="btnCloseModal">
+                <img src="assets/images/close.png" class="closeModal" alt="fechar_contatos">
+            </div>
+        </div>
+    </div>
+    <!-- MODAL AREA  -->
     <script src="assets/script/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

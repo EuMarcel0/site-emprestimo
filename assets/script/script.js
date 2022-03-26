@@ -172,3 +172,21 @@ function validacao_telefone() {
 
 document.getElementById("phone2").onkeyup = mascara_telefone;
 document.getElementById("phone2").onblur = validacao_telefone;
+
+
+// AREA MODAL CONTATO
+
+function openModal(){
+    let contactModal = document.querySelector('#modal')
+    contactModal.style.display = 'flex';
+    contactModal.addEventListener('click', (e) => {
+        console.log(e.target)
+        if(e.target.id == 'modal' || e.target.className == 'closeModal'){
+            contactModal.style.display = 'none';
+        }
+    })
+
+}
+
+
+
