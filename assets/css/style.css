@@ -1068,6 +1068,22 @@ footer .copyright{
     .partnerArea--form form{
         width: 100%;
     }
+
+    .energyArea {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .energyArea--texts {
+        width: 100%;
+    }
+    .energyContract {
+        width: 100%;
+    }
+    .btnEnergy {
+        margin: 30px auto;
+    }
 }
 @media(max-width: 876px){
     .contactArea{
@@ -1128,6 +1144,10 @@ footer .copyright{
     }
     .footerArea--items{
         align-items: center;
+    }
+
+    .energyArea--texts h2 {
+        font-size: 2rem;
     }
 }
 
