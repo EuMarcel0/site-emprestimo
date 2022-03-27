@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body onscroll="fixedNav()">
+<body>
     <header id="header">
         <!-- BARRA COM CONTATOS PRE HEADER/NAV -->
         <div class="contactArea">
@@ -53,8 +53,9 @@
             <a href="index.html">
                 <div class="logoArea"><span class="levi">Levi</span>Cred</div>
             </a>
+            <i class="fa-solid fa-bars" id="menuHambur" onclick="openMenu()"></i>
             <div class="navArea">
-                <nav>
+                <nav id="navDesktop">
                     <ul>
                         <button id="contact" onclick="openModal()">Contato</button>
                         <a href="register.html">
@@ -74,6 +75,28 @@
                         </a>
                     </ul>
                 </nav>
+                <aside id="menuMobile">
+                    <nav id="navMobile">
+                        <ul>
+                            <button id="contact2" onclick="openModal()">Contato</button>
+                            <a href="register.html" onclick="closeMenu()">
+                                <li>Cadastro</li>
+                            </a>
+                            <a href="#cartaoCredito" onclick="closeMenu()">
+                                <li>Cartão de crédito</li>
+                            </a>
+                            <a href="#serviços" onclick="closeMenu()">
+                                <li>Serviços</li>
+                            </a>
+                            <a href="#aboutUs" onclick="closeMenu()">
+                                <li>Sobre nós</li>
+                            </a>
+                            <a href="#partner" onclick="closeMenu()">
+                                <li>Seja parceiro</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </aside>
             </div>
         </div>
         <!-- AREA NAVBAR -->
@@ -83,7 +106,7 @@
         <section class="bannerArea">
             <div class="itemsBannerArea container">
                 <div class="descriptionArea">
-                    <h1 data-aos="fade-down" data-aos-delay="500" data-aos-duration="1100">Sua tranquilidade<br>financeira<br>em alguns cliques</h1>
+                    <h1 data-aos="fade-down" data-aos-delay="500" data-aos-duration="1100">Pare de sonhar e comece a<br><strong>realizar</strong></h1>
                     <div class="description" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100">
                         Viajar, deixar as contas em dia ou fazer uma reforma.
                         Todo mundo tem um projeto que gostaria de fazer ou uma
@@ -358,7 +381,7 @@
     </main>
     <!-- BOTAO PARA SCROLLAR PARA CIMA -->
     <div onclick="scrollBar()" class="btnTop">
-        <img src="assets/images/seta-para-recolher.png" alt="Voltar_ao_topo">
+        <img src="assets/images/seta-para-recolher.png" class="btnTop" alt="Voltar_ao_topo">
     </div>
     <!-- BOTAO PARA SCROLLAR PARA CIMA -->
     <!-- FOOTER AREA -->

@@ -61,7 +61,7 @@ h1, h2{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2000;
+    z-index: 999999;
 }
 .modal--area{
     width: 30%;
@@ -207,6 +207,49 @@ h1, h2{
 
 /* ----BAR CONTACT---- */
 
+
+/* ----AREA SIDE---- */
+#menuMobile{
+    display: none;
+    background-color: #1E44CB;
+    height: calc(100vh - 130px);
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    width: 460px;
+    animation: modal .2s;
+}
+#navMobile{
+    height: 100vh; 
+    
+}
+#navMobile ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 !important;
+}
+#navMobile ul a li{
+    padding: 20px 20px;
+    list-style: none;
+}
+#contact2{
+    background-color: transparent;
+    color: #fff;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: left;
+    transition: all .3s linear;
+    width: 100%;
+}
+#navMobile ul a:hover,
+#contact2:hover{
+    background-color: rgba(104, 114, 255, 0.39);
+}
+#navMobile ul a{
+    color: #fff;
+    font-size: 2rem;
+}
+
 /* ----HEADER + NAV---- */
 
 .sticky {
@@ -260,17 +303,17 @@ header{
 .navArea{
     height: 80px;
 }
-nav{
+#navDesktop{
     height: 100%;
 }
-nav ul{
+#navDesktop ul{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
 }
-nav ul li{
+#navDesktop ul li{
     list-style: none;
     color: #FFFFFF;
     font-size: 18px;
@@ -281,15 +324,15 @@ nav ul li{
     padding: 20px;
     
 }
-nav ul a{
+#navDesktop ul a{
     height: 100%;
     transition: all .3s linear;
 }   
-nav ul a:hover{
+#navDesktop ul a:hover{
     background-color: rgba(104, 114, 255, 0.39);
     font-size: 5px;
 }
-nav ul a:active{
+#navDesktop ul a:active{
     background-color: rgba(104, 114, 255, 0.39);
 }
 .btn2{
@@ -312,6 +355,7 @@ nav ul a:active{
     background-position-x: 0px;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 .itemsBannerArea{
     display: flex;
@@ -324,24 +368,29 @@ nav ul a:active{
 .descriptionArea{
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items:center;
     justify-content: center;
+    text-align: center;
 }
 .descriptionArea h1{
-    font-weight: bold;
-    font-size: 100px;
-    line-height: 90px;
+    font-weight: 100;
+    font-size: 4rem;
+    line-height: 68px;
     margin-bottom: 20px;
     color: #FFF;
     text-shadow: 2px 2px 4px rgb(99, 99, 99);
     font-family: 'Inter', monospace;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.555);
+    padding: 10px 0;
 }
 .descriptionArea .description{
     font-size: 18px;
-    color: #d6d6d6;
+    color: #f0f0f0;
     max-width: 550px;
     margin-bottom: 20px;
     font-family: 'Inter', monospace;
+    font-weight: 100;
 }
 .descriptionArea .btn{
     background-color: #FFF;
@@ -878,7 +927,7 @@ footer .copyright{
 /* ----FOOTER AREA---- */
 
 /* ----ARROW TOP AREA---- */ 
-.btnTop img{
+.btnTop{
     width:40px;
     height:40px;
     position: fixed;
@@ -888,7 +937,7 @@ footer .copyright{
     padding:5px;
     border-radius: 50%;
     cursor:pointer;
-    display: none;
+    display: block;
     z-index: 999;
 }
 
@@ -915,5 +964,33 @@ footer .copyright{
         flex: 1;
         color: #FFF;
         min-width: 100%;
+    }
+    .optionsArea{
+        flex-direction: column;
+    }
+    .line{
+        display: none;
+    }
+    .moneyPersonal{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #CCC;
+        
+    }
+    .moneyPersonal,
+    .moneyCompany{
+        max-width: 420px;
+        gap: 0 !important;
+    }
+}
+
+@media(max-width: 991px){
+    #navDesktop ul{
+        display: none;
+    }
+    #menuHambur{
+        margin-right: -556px;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
     }
 }

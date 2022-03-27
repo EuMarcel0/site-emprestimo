@@ -90,7 +90,6 @@ function validacao_telefone() {
 
 document.getElementById("phone").onkeyup = mascara_telefone;
 document.getElementById("phone").onblur = validacao_telefone;
-document.getElementById("email").onblur = validacao_email;
 
 
 
@@ -119,19 +118,6 @@ function formatarMoeda() {
 // CONTROLAR SCROLLING 
 
 
-
-const navBar = document.getElementById('navbarID');
-const sticky = navBar.offsetTop;
-
-function fixedNav(){
-    if(window.scrollY >= sticky){
-        navBar.classList.add('sticky');
-    }else{
-        navBar.classList.remove('sticky');
-    }
-};
-
-
 // BUTTON TO TOP
 
 function scrollBar(){
@@ -142,14 +128,14 @@ function scrollBar(){
 };
 
 function controlarBotao(){
-    if (window.scrollY == 0){
-        console.log(window.scrollY);
+    if (window.scrollY === 0){
         document.querySelector(".btnTop").style.display = 'none'; 
     } else{
         document.querySelector(".btnTop").style.display = 'block';
     }
-};
-window.addEventListener("scroll", controlarBotao);
+}
+
+window.addEventListener("scroll", controlarBotao());
 
 
 
@@ -199,7 +185,33 @@ function openModal(){
         }
     })
 
+    document.getElementById('menuMobile').style;
+    if(document.getElementById('menuMobile').style.display == 'block'){
+        document.getElementById('menuMobile').style.display = 'none';
+    }else{
+        document.getElementById('menuMobile').style.display = 'block';
+    }
+
+};
+
+
+// MENU MOBILE
+
+function openMenu(){
+    document.getElementById('menuMobile').style;
+    if(document.getElementById('menuMobile').style.display == 'block'){
+        document.getElementById('menuMobile').style.display = 'none';
+    }else{
+        document.getElementById('menuMobile').style.display = 'block';
+    }
+
+};
+
+function closeMenu(){
+    document.getElementById('menuMobile').style;
+    if(document.getElementById('menuMobile').style.display == 'block'){
+        document.getElementById('menuMobile').style.display = 'none';
+    }else{
+        document.getElementById('menuMobile').style.display = 'block';
+    }
 }
-
-
-
