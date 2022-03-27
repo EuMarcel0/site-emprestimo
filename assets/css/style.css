@@ -1035,7 +1035,72 @@ footer .copyright{
         position: relative;
         animation: modal .9s;
     }
-    footer{
-        height:360px;
+    .buttonsForm a{
+        margin-left: 0 !important;
+    }
+    footer .copyright {
+        position: relative;
+    }
+}
+@media(max-width: 876px){
+    .contactArea{
+        padding: 5px 10px;
+    }
+}
+@media(max-width: 768px){
+    .contactArea{
+        display: none;
+    }
+    header {
+        height: 80px;
+    }
+    .bannerArea {
+        height: calc(100vh - 80px);
+    }
+    #menuMobile{
+        height: calc(100vh - 80px);
+    }
+    #navMobile li,
+    #contact2{
+        border-bottom: 1px solid rgba(102, 112, 255, 0.24);
+    }
+    .titleDefault .subTitle2{
+        line-height: 20px;
+    }
+    .buttonsForm button {
+        margin-bottom: 15px;
+    }
+    .partnerArea form .row{
+        flex-direction: column;
+    }
+    #menuHambur{
+        position: absolute;
+        right: 31px;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    footer .copyright {
+        position: relative;
+    }
+    .footerArea{
+        flex-direction: column;
+    }
+    .footerArea--items{
+        align-items: center;
+    }
+}
+
+@media(max-width:425px){
+    .descriptionArea h1 {
+        font-size: 2rem;
+        line-height: 50px;
+    }
+    #menuHambur{
+        position: absolute;
+        right: 31px;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
     }
 }
