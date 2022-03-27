@@ -772,10 +772,9 @@ label{
 footer{
     background-color: #1E44CB;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px 0 0 0px;
     font-size:14px;
     margin-top: 0px;
-    position: relative;
 }
 
 .footerArea{
@@ -857,10 +856,8 @@ footer .copyright{
     justify-content: center;
     align-items:center;
     width: 100%;
-    height: 50px;
+    height: 30px;
     background-color: #2A359B;
-    position: absolute;
-    bottom: 0;
 }
 /* ----Energy AREA---- */
 #energy{
@@ -974,6 +971,19 @@ footer .copyright{
 
 /* ----- RESPONSIVIDADE ---- */
 
+@media(max-width:1173px){
+    .modal--area {
+        width: 30%;
+        min-width: 410px;
+        height: 322px;
+        background-color: rgb(240, 240, 240);
+        border-radius: 10px;
+        padding: 10px 40px;
+        position: relative;
+        animation: modal .9s;
+    }
+}
+
 @media(max-width: 1024px){
     .cardArea {
         display: flex;
@@ -1012,6 +1022,14 @@ footer .copyright{
 }
 
 @media(max-width: 991px){
+    #navMobile ul a,
+    #contact2{
+        font-size: 24px;
+    }
+    #navMobile li,
+    #contact2{
+        border-bottom: 1px solid rgba(102, 112, 255, 0.24);
+    }
     #navDesktop ul{
         display: none;
     }
@@ -1041,10 +1059,32 @@ footer .copyright{
     footer .copyright {
         position: relative;
     }
+    .formAreaInfos {
+        width: 100%;
+    }
+    .partnerArea--form{
+        padding: 20px 0;
+    }
+    .partnerArea--form form{
+        width: 100%;
+    }
 }
 @media(max-width: 876px){
     .contactArea{
         padding: 5px 10px;
+    }
+    .titleDefault .title2 {
+        color: #353535;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .titleDefault .subTitle2 {
+        font-size: 15px;
+        color: #CCC;
+        line-height: 10px;
+        margin-bottom: 26px;
     }
 }
 @media(max-width: 768px){
@@ -1091,6 +1131,33 @@ footer .copyright{
     }
 }
 
+@media(max-width: 645px){
+    .cardArea--card img{
+        width: 100%;
+    }
+}
+@media(max-width: 599px){
+    .modal--area{
+        width: 100%;
+        min-width: 280px;
+        height: 400px;
+    }
+    .closeModal {
+        position: absolute;
+        top: -6px;
+        right: -9px;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: rgb(240, 240, 240);
+        transition: all 0.4s ease;
+    }
+}
+@media(max-width: 433px){
+    .btnTop{
+        display: none;
+    }
+}
 @media(max-width:425px){
     .descriptionArea h1 {
         font-size: 2rem;
@@ -1102,5 +1169,8 @@ footer .copyright{
         color: #fff;
         font-size: 2rem;
         cursor: pointer;
+    }
+    #menuMobile{
+        width: 70%;
     }
 }

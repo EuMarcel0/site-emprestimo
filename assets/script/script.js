@@ -129,9 +129,9 @@ function scrollBar(){
 
 function controlarBotao(){
     if (window.scrollY === 0){
-        document.querySelector(".btnTop").style.display = 'none'; 
+        document.querySelectorAll(".btnTop").style.display = 'none'; 
     } else{
-        document.querySelector(".btnTop").style.display = 'block';
+        document.querySelectorAll(".btnTop").style.display = 'block';
     }
 }
 
