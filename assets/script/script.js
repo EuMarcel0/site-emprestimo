@@ -185,12 +185,7 @@ function openModal(){
         }
     })
 
-    document.getElementById('menuMobile').style;
-    if(document.getElementById('menuMobile').style.display == 'block'){
-        document.getElementById('menuMobile').style.display = 'none';
-    }else{
-        document.getElementById('menuMobile').style.display = 'block';
-    }
+    document.getElementById('menuMobile').style.display = 'none';
 
 };
 

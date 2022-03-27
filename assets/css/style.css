@@ -51,6 +51,7 @@ h1, h2{
 }
 /* ----AREA MODAL---- */
 
+
 #modal{
     display: none;
     justify-content: center;
@@ -128,6 +129,8 @@ h1, h2{
 .closeModal:hover{
     opacity: 0.9;
 }
+
+
 @keyframes modal{
     from {
         opacity: 0;
@@ -273,18 +276,40 @@ h1, h2{
 #contact:hover{
     background-color: rgba(104, 114, 255, 0.39);
 }
+#navBack,
+#navBack lu,
+#navBack a,
+#navBack a li{
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    transition: all 0.4s ease;
+}
+#navBack ul{
+    margin: 0 !important;
+}
+#navBack a:hover{
+    opacity: .8;
+}
+.fa-angle-left{
+    margin-right: 10px;
+}
+#backHome lu{
+    padding: 0 !important;
+    margin: 0 !important;
+}
 #backHome{
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
     color: #fff;
     padding: 0 0 0 15px;
+    list-style: none;
 }
 #backHome i{
     font-size: 15px;
-}
-.fixed-top{
-    opacity: 1;
 }
 header{
     height: 130px;
@@ -947,7 +972,6 @@ footer .copyright{
 
 
 
-
 /* ----- RESPONSIVIDADE ---- */
 
 @media(max-width: 1024px){
@@ -992,12 +1016,26 @@ footer .copyright{
         display: none;
     }
     #menuHambur{
-        margin-right: -556px;
+        position: absolute;
+        right: 107px;
         color: #fff;
         font-size: 2rem;
         cursor: pointer;
     }
     #menuHambur{
         display: block;
+    }
+    .modal--area {
+        width: 30%;
+        min-width: 410px;
+        height: 322px;
+        background-color: rgb(240, 240, 240);
+        border-radius: 10px;
+        padding: 10px 40px;
+        position: relative;
+        animation: modal .9s;
+    }
+    footer{
+        height:360px;
     }
 }
