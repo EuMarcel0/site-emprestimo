@@ -210,3 +210,9 @@ function closeMenu(){
         document.getElementById('menuMobile').style.display = 'block';
     }
 }
+
+scrollY.addEventListener('scrollY', () =>{
+    if(window.scrollY > 0){
+        document.getElementById('menuMobile').style.display = 'none';
+    }
+})
