@@ -523,7 +523,7 @@ label{
 }
 .optionsArea{
     display: flex;
-    gap: 50px;
+    gap: 176px;
     justify-content: center;
     align-items: center;
 }
@@ -1005,6 +1005,7 @@ footer .copyright{
     }
     .optionsArea{
         flex-direction: column;
+        gap: 50px;
     }
     .line{
         display: none;
@@ -1094,10 +1095,10 @@ footer .copyright{
         font-size: 2rem;
         font-weight: bold;
         line-height: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 7px;
     }
     .titleDefault .subTitle2 {
-        font-size: 15px;
+        font-size: 20px;
         color: #CCC;
         line-height: 10px;
         margin-bottom: 26px;
@@ -1158,7 +1159,7 @@ footer .copyright{
 }
 @media(max-width: 599px){
     .modal--area{
-        width: 100%;
+        width: 90%;
         min-width: 280px;
         height: 400px;
     }
@@ -1192,5 +1193,11 @@ footer .copyright{
     }
     #menuMobile{
         width: 70%;
+    }
+}
+
+@media(max-width:396px){
+    .titleDefault .subTitle1 {
+        line-height: 20px;
     }
 }

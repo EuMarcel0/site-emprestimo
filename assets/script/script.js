@@ -120,22 +120,52 @@ function formatarMoeda() {
 
 // BUTTON TO TOP
 
-function scrollBar(){
+const c = (elem)=> {
+    return document.getElementById(elem);
+}
+
+function subirTela(){
     window.scrollTo({
         top: 0,
-        behavior:'smooth',
+        behavior:'smooth'
     });
 };
 
 function controlarBotao(){
-    if (window.scrollY === 0){
-        document.querySelectorAll(".btnTop").style.display = 'none'; 
+    if (window.scrollY > 300){
+        c("btnSubirTela").style.display = 'block'; 
     } else{
-        document.querySelectorAll(".btnTop").style.display = 'block';
+        c("btnSubirTela").style.display = 'none';
     }
-}
+};
 
-window.addEventListener("scroll", controlarBotao());
+window.addEventListener("scroll", controlarBotao);
+
+
+
+function controlarBotao2(){
+    if (window.scrollY > 200){
+        c("btnSubirTela2").style.display = 'block'; 
+    } else{
+        c("btnSubirTela2").style.display = 'none';
+    }
+};
+
+window.addEventListener("scroll", controlarBotao2);
+
+
+
+// function controlarBotao3(){
+//     if (window.scrollY > 200){
+//         c("btnSubirTela3").style.display = 'block'; 
+//     } else{
+//         c("btnSubirTela3").style.display = 'none';
+//     }
+// };
+
+// window.addEventListener("scroll", controlarBotao3);
+
+
 
 
 
@@ -211,8 +241,11 @@ function closeMenu(){
     }
 }
 
-scrollY.addEventListener('scrollY', () =>{
-    if(window.scrollY > 0){
+
+function scrollMenuMobile(){
+    if(window.scrollY > 10){
         document.getElementById('menuMobile').style.display = 'none';
     }
-})
+}
+
+window.addEventListener('scroll', scrollMenuMobile);
